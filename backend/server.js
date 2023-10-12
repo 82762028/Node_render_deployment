@@ -22,7 +22,7 @@ app.get('/post',(req,res)=>{
 
 //Middleware qui permet de traiter les données du request
 app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); // Autoriser l'origine du client
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Autoriser l'origine du client
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE'); // Méthodes HTTP autorisées
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization'); // En-têtes autorisés
     res.setHeader('Access-Control-Allow-Credentials', 'true'); // Autoriser les cookies (si nécessaire)
